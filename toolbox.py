@@ -71,7 +71,7 @@ class cquant:
                 else:
                     continue
             i += 1
-        data_max = pd.DataFrame({'SettelementPoint':largesthub.T,'Year':years.T,'Hour':max_hour.T,'Max Volatility':max_vol.T})
+        data_max = pd.DataFrame({'SettelementPoint':largesthub.T,'Year':years.T,'Hour':max_hour.T,'Max Volatility':maxx.T})
         data.to_csv('HourlyVolatilityByYear.csv')
         data_max.to_csv('MaxVolatilityByYear.csv')
         
