@@ -76,10 +76,10 @@ class cquant:
         data_max.to_csv('MaxVolatilityByYear.csv')
         
     def task7(self,years,months,days):
-        date = []
-        p = []
         for point in self.df.SettlementPoint.unique():
             hourly_price = np.zeros(((31*4*12),24))
+            p = []
+            date = []
             i = 0
             for year in years:
                 for month in months:
