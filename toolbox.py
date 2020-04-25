@@ -79,7 +79,7 @@ class cquant:
         date = []
         p = []
         for point in self.df.SettlementPoint.unique():
-            hourly_price = np.zeros(((31*4),24))
+            hourly_price = np.zeros(((31*4*12),24))
             i = 0
             for year in years:
                 for month in months:
