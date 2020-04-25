@@ -93,6 +93,6 @@ class cquant:
                                 continue
                         date = np.append(date,year_month_day)
                         p = np.append(p,point)
-                    i += 1
+                        i += 1
             data = pd.DataFrame({'SettlmentPoint':p.T,'Date':date.T,'X1':hourly_price[:,0],'X2':hourly_price[:,1],'X3':hourly_price[:,2],'X4':hourly_price[:,3],'X5':hourly_price[:,4],'X6':hourly_price[:,5],'X7':hourly_price[:,6],'X8':hourly_price[:,7],'X9':hourly_price[:,8],'X10':hourly_price[:,9],'X11':hourly_price[:,10],'X12':hourly_price[:,11],'X13':hourly_price[:,12],'X14':hourly_price[:,13],'X15':hourly_price[:,14],'X16':hourly_price[:,15],'X17':hourly_price[:,16],'X18':hourly_price[:,17],'X19':hourly_price[:,18],'X20':hourly_price[:,19],'X21':hourly_price[:,20],'X22':hourly_price[:,21],'X23':hourly_price[:,22],'X24':hourly_price[:,23]})
             data.to_csv('formattedSpotHistory/spot_'+point+'.csv')
