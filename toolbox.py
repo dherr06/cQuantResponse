@@ -56,6 +56,7 @@ class cquant:
         largesthub = np.array([])
         i = 0
         maxx = np.zeros(4)
+        max_hour = np.zeros(4)
         for year in data.Year.unique():
             largesthub = np.append(largesthub,'FILLER')
             for point in data.SettelementPoint.unique():
