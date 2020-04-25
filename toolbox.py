@@ -58,8 +58,8 @@ class cquant:
         maxx = np.zeros(4)
         for year in data.Year.unique():
             largesthub = np.append(largesthub,'FILLER')
-            for point in data.SettelmentPoint.unique():
-                temp = data.loc[data['SettlementPoint'].str.contains(point)]
+            for point in data.SettelementPoint.unique():
+                temp = data.loc[data['SettelementPoint'].str.contains(point)]
                 temp2 = temp.loc[temp['Year'].str.contains(year)]
                 max_temp = np.amax(temp2['Volatility'].values)
                 max_index = np.argmax(temp2['Volatility'].values)
