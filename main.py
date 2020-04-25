@@ -15,8 +15,8 @@ def main():
     main_struct = cquant(df)
     #task2 and task3
     #compute averages for each point-month-year combination(720 values)
-    years = ['2016','2017','2018','2019']
-    months = ['01','02','03','04','05','06','07','08','09','10','11','12']
+    years = np.array(['2016','2017','2018','2019'])
+    months = np.array(['01','02','03','04','05','06','07','08','09','10','11','12'])
     main_struct.task2_3(years,months)
     #task 4 and 5
     #compute log hourly stdev and wrtie to csv file
